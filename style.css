@@ -1,0 +1,810 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Offer Bar */
+.offer-bar {
+  background: rgb(9, 7, 46);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  height: 50px;
+  font-size: 30px;
+  display: flex;
+  justify-content: space-around;
+  padding-left: 30px;
+  
+}
+
+.close-btn {
+  position: absolute;
+  right: 20px;
+  cursor: pointer;
+  padding-right: 100px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: white;
+}
+
+.navbar nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+
+/* Hero Section */
+.hero {
+  height: 80vh;
+  background: url('./images/img2.jpg') no-repeat center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: white;
+  text-align: center;
+}
+
+/* Dark overlay */
+.hero::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  top: 0;
+  left: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-size: 100px;
+  font-weight: bold;
+
+}
+
+.hero p {
+  margin: 10px 0;
+  font-size: 30px;
+}
+
+.shop-btn {
+  padding: 10px 20px;
+  border: none;
+  background: white;
+  color: black;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+/* Arrows */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  background: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.left {
+  left: 20px;
+}
+
+.right {
+  right: 20px;
+}
+
+/* Brands */
+.brands {
+  padding: 40px;
+}
+/* Features */
+.features {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px;
+}
+
+.card {
+  width: 270px;
+  text-align: center;
+  background: #c3c0d6;
+  padding: 20px;
+border-radius: 5px;
+height: 280px;
+}
+
+.icon {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 14px;
+  color: rgb(1, 1, 2);
+}
+.hero2 {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    align-items: center;
+
+}
+.hero2 h1 {
+    font-size: 50px;
+}
+.hero2 h3 {
+    font-size: 20px;
+    
+}
+.icon2 {
+    width: 80px;
+    height: 80px;
+}
+.brand2 img {
+    width: 300px;
+    height: 300px;
+    padding-left: 10px;
+    
+}
+.collection2 {
+    display: flex;
+    padding-top: 20px;
+    padding-left: 20px;
+    gap: 30px;
+}
+.collection button {
+  display: block;
+}
+.hero-content h1 {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid black;
+  width: 0;
+  animation: typing 4s steps(30) forwards, blink 0.5s infinite;
+}
+
+@keyframes typing {
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+.offer-bar {
+  width: 100%;
+  overflow: hidden;
+  background: black;
+  color: white;
+  padding: 10px 0;
+}
+
+.offer-bar p {
+  display: inline-block;
+  white-space: nowrap;
+  padding-left: 100%;
+  animation: scrollText 10s linear infinite;
+}
+
+@keyframes scrollText {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.brand2 {
+  position: relative;
+  width: 300px; /* adjust */
+}
+
+.brand2 img {
+  width: 100%;
+  display: block;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: rgba(0,0,0,0.4); /* optional dark overlay */
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.brand2:hover .overlay {
+  opacity: 1;
+}
+
+.overlay button {
+  padding: 10px 20px;
+  background: rgb(230, 41, 41);
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+.Collection h1{
+  padding-left: 30px;
+  font-size: 40px;
+  padding-top:50px ;
+}
+.collection2{
+  padding-top: 50px;
+}
+.collection3 img{
+  width: 300px;
+    height: 300px;
+    padding-left: 10px;
+}
+.prefer{
+  display: flex;
+  overflow: auto;
+  gap: 35px;
+  padding: 10px;
+  
+  padding-top: 30px;
+  background-color:  #5f767e;
+  
+
+  
+}
+.collection3{
+  flex: 0 0 auto;
+  width: 280px;
+  position: relative;
+  border-radius: 20px;
+
+}
+.models{
+  width:100% ;
+  height: 280px;
+  object-fit: cover;
+  
+}
+.mostwanted h1{
+  padding-left: 30px;
+  font-size: 40px;
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+.body{
+  background-color: aquamarine;
+}
+.branditems img{
+  width: 150px;
+  height: 100px;
+  
+}
+.brands{
+  display: flex;
+  justify-content: space-around;
+  
+}
+.head {
+  padding-left: 30px;
+  font-size: 30px;
+  padding-top: 30px;
+}
+.collection3{
+  position: relative;
+  z-index: 1;
+}
+
+/* Newsletter */
+.newsletter {
+  text-align: center;
+  padding: 40px;
+}
+
+.newsletter h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.newsletter p {
+  margin-bottom: 20px;
+  color: white;
+}
+
+.newsletter input {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.newsletter button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Footer */
+.footer {
+  background-color: #5f767e;
+
+  color: black;
+  padding: 40px;
+}
+
+.footer h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.footer p {
+  max-width: 600px;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.social span {
+  font-size: 24px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+body {
+  
+  margin: 0;
+  background: #f5f5f5;
+}
+
+/* Main Layout */
+.container {
+  display: flex;
+  padding: 20px;
+}
+
+/* LEFT SIDE */
+.filter {
+  width: 200px;
+}
+
+.filter h3 {
+  margin-top: 20px;
+  font-size:40px ;
+  padding-top: 50px;
+  color:white;
+}
+
+.filter label {
+  display: block;
+  margin: 5px 0;
+  font-size: 30px;
+}
+
+/* RIGHT SIDE */
+.products {
+  flex: 1;
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/* CARD */
+.card {
+  background: white;
+  padding: 15px;
+  width: 300px;
+  text-align: center;
+  border-radius: 10px;
+  transition: 0.3s;
+  height: 300px;
+  
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  height: 300px;
+}
+
+/* Hover effect 🔥 */
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+/* RIGHT SIDE */
+.products1 {
+  flex: 1;
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/* CARD */
+.card1 {
+  background: white;
+  padding: 15px;
+  width: 300px;
+  text-align: center;
+  border-radius: 10px;
+  transition: 0.3s;
+  height: 350px;
+}
+
+.card1 img {
+  width: 100%;
+  border-radius: 10px;
+  height: 300px;
+}
+
+/* Hover effect 🔥 */
+.card1:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+/* RIGHT SIDE */
+.products2 {
+  flex: 1;
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-bottom: 30px;
+}
+
+/* CARD */
+.card2 {
+  background: white;
+  padding: 15px;
+  width: 300px;
+  text-align: center;
+  border-radius: 10px;
+  transition: 0.3s;
+  height: 350px;
+}
+
+.card2 img {
+  width: 100%;
+  border-radius: 10px;
+  height: 300px;
+  
+}
+
+/* Hover effect 🔥 */
+.card2:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+/* RIGHT SIDE */
+.products3 {
+  flex: 1;
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/* CARD */
+.card3 {
+  background: white;
+  padding: 15px;
+  width: 300px;
+  text-align: center;
+  border-radius: 10px;
+  transition: 0.3s;
+  height: 350px;
+}
+
+.card3 img {
+  width: 100%;
+  border-radius: 10px;
+  height: 300px;
+}
+
+/* Hover effect 🔥 */
+.card3:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+.features{
+  background-color: #5f767e;
+}
+.container{
+   background-color: #5f767e;
+}
+.sale {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: red;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  padding-left: 10px;
+}
+.heart{
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 40px;
+  cursor: pointer;
+}
+.prefer::-webkit-scrollbar{
+  display: none;
+}
+.heart:active{
+  transform: scale(1.2);
+}
+
+/* Hover effect 🔥 */
+.collection3:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+@media (max-width: 768px) {
+  .nav-link {
+    display: none;
+  }
+  .menu-icon {
+    display: block;
+  }
+}
+@media (max-width: 768px) {
+  .hero{
+    text-align: center;
+    padding: 20px;
+  }
+  .hero-content h1 {
+    font-size: 22px;
+
+  }
+  .hero-content p{
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .arrow{
+    display: none;
+
+  }
+}
+@media (max-width: 768px) {
+  .shop-btn{
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+
+
+.containercc {
+  display: flex;
+  height: 100vh;
+}
+
+/* LEFT SIDE */
+.lefts {
+  width: 40%;
+  padding: 40px;
+  background: #f9f9f9;
+}
+
+.lefts h2 {
+  margin-bottom: 20px;
+}
+
+.lefts label {
+  display: block;
+  margin-top: 15px;
+}
+
+.lefts input,
+.lefts textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.lefts textarea {
+  height: 100px;
+}
+
+.lefts button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background: #4a90e2;
+  color: white;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.lefts button:hover {
+  background: #357abd;
+}
+
+/* RIGHT SIDE */
+.rights {
+  width: 500px;
+}
+
+.image-box {
+  position: relative;
+  height: 500px;
+  padding-left: 50px;
+}
+
+.image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* OVERLAY */
+.overlays {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  color: white;
+}
+
+.overlays h2 {
+  font-size: 28px;
+  margin: 0;
+}
+
+.overlays p {
+  font-size: 16px;
+}
+.offer-container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 1s ease;
+}
+
+/* Visible class */
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Basic styling */
+.offer-image img {
+  width: 300px;
+  border-radius: 15px;
+}
+
+button {
+  padding: 10px 20px;
+  background: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.offer-section {
+  padding: 50px;
+  background: #f5f5f5;
+}
+
+.offer-containers {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+/* Left Image */
+.offer-image img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 20px;
+  animation: fadeInLeft 1.5s ease;
+}
+
+/* Right Content */
+.offer-content {
+  max-width: 400px;
+  animation: fadeInRight 1.5s ease;
+}
+
+.offer-title {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.offer-text {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* Button */
+.offer-btn {
+  padding: 12px 25px;
+  border: none;
+  background: rgb(236, 13, 42);
+  color: white;
+  cursor: pointer;
+  border-radius: 25px;
+  transition: 0.3s;
+}
+
+.offer-btn:hover {
+  background: green;
+  transform: scale(1.05);
+}
+
+
+/* Animations */
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
